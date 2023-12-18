@@ -5,27 +5,17 @@
 // a. Lucas e Pedro tenham o mesmo tamanho;
 // b. Lucas seja maior que Pedro.
 
-var alturaPedro = 1.5;
-var alturaLucas = 1.1;
-var anos = 0;
+let pedro = 1.5;
+let lucas = 1.1;
 
-// Enquanto Lucas for menor ou igual a Pedro
-for (; alturaLucas <= alturaPedro; anos++) {
-  alturaPedro += 0.02;
-  alturaLucas += 0.03;
+// for (let anos = 0; lucas <= pedro; anos++) { 
+//   pedro += 0.02;
+//   lucas += 0.03;
+//   console.log(anos)
+// }
+
+for (let anos = 0; lucas < pedro; anos++) {
+  pedro += 0.02;
+  lucas += 0.03;
+  console.log(anos)
 }
-
-console.log(
-  `Serão necessários ${anos} anos para que Lucas e Pedro tenham o mesmo tamanho.`
-);
-
-// Enquanto Pedro for maior que Lucas
-for (; alturaPedro > alturaLucas; anos++) {
-  alturaPedro += 0.02;
-  alturaLucas += 0.03;
-}
-
-console.log(
-  `Serão necessários ${anos} anos para que Lucas seja mai
-or que Pedro.`
-);

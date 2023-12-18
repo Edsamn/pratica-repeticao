@@ -6,5 +6,6 @@
 for (let i = 1; i <= 5; i++) {
     let altura = Number(prompt("Altura?"));
     console.log(altura);
+    
 }
 
